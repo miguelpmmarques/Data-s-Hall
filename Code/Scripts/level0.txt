@@ -1,0 +1,35 @@
+spider:
+-aware 
+- whitty
+-sarcastic
+-smart
+
+player:
+-naive
+-rash
+-shortsighted
+
+scene:
+aranha acabou de sair da caixa:
+
+player- really? 
+*turns arround*
+-is this what I'm here for?
+
+spider:
+-You seem disapointed, but really, wise guy
+-...
+-how exacly do expect to get out of here alive?
+
+Player:
+*turns back*
+-Didn't think that far ahead
+
+Spider:
+- Obviously. 
+-Sit back Hackerman.
+-I'm gonna show you just how valuable I can be.
+
+Prompt:
+-Press Space to switch control
+

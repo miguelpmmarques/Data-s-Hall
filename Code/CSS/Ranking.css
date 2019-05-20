@@ -1,0 +1,94 @@
+html{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: pixel;
+    src: url(moab.ttf) format("truetype");
+}
+h1 {
+    text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
+    margin: 0px;
+    position: absolute;
+    left: 340px;
+    font-family: pixel;
+    font-size: 25px;
+    color: white;
+}
+body{
+    width: 1200px;
+    display: inline-flex;
+    margin: 0;
+    padding-top: 2px;
+    width: auto;
+    height: auto;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("../resources/RankingMenu.png"), radial-gradient(circle at 95% 0%, #cbdbfc, #b3bfea, #a0a3d7, #9087c3, #846aac, #775a9a, #694a88, #5c3b76, #4a3566, #3b2e56, #2d2745, #222034);
+    background-size: auto;
+    background-position: center center;
+}
+#first{
+    position: absolute;
+    left: 190px;
+    top: 155px;
+}
+#second{
+    position: absolute;
+    left: 190px;
+    top: 220px;
+}
+#third{
+    position: absolute;
+    left: 190px;
+    top: 285px;
+}
+#fourth{
+    position: absolute;
+    left: 190px;
+    top: 345px;
+}
+#fifth{
+    position: absolute;
+    left: 190px;
+    top: 410px;
+}
+
+#sixth{
+    position: absolute;
+    left: 190px;
+    top: 470px;
+}
+#seventh{
+    position: absolute;
+    left: 190px;
+    top: 530px;
+}
+#eighth{
+    position: absolute;
+    left: 190px;
+    top: 595px;
+}
+
+
+
+#ExitBtn{
+    position: absolute;
+    left: 1200px;
+    top: 10px;
+    background-color: Transparent;
+    background-image: url("../resources/exitBtn.png");
+    width: 90px;
+    height: 90px;
+    background-size: 90px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background-color 1s;
+}
+#ExitBtn:hover
+{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}

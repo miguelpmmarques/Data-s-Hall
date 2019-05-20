@@ -1,0 +1,61 @@
+spider:
+-aware 
+- whitty
+-sarcastic
+-smart
+-secretly evil
+
+player:
+-naive
+-rash
+-shortsighted
+
+scene:
+-INICIO DA RUA NIVEL 1
+
+Spider- Not a single thank you?
+- Guess hackerboys don't have many friends...
+
+Player- Haven't needed many.
+-Well, now I have you.
+Spider- Don't think A.I. counts for much, if you think about it.
+*streatches*
+
+Player- If it didn't, people in this city wouldn't have any friends
+
+
+spider- Data's Hall! Yeah, screw those guys. 
+- Never work for them. 
+- Not that you could, now that you've robbed them. 
+-...
+- But thanks though.
+spider - This is  a lot to  take in
+-you should take a seat
+
+player - Those benches make my butt hurt.
+-But are they that bad though?
+
+spider- Innocent much? whatch this!
+-Hey Joe, how was work today?!
+
+Robot- Hum...
+...
+...
+-it went by fast
+
+spider - Must happen a lot
+*both start walking off*
+-I'd guess.
+
+*stops and looks up*
+player- What just happened?
+
+Spider-What happens to them all...
+*walks again*
+
+spider - Don't get close to that guy, he wont hesitate to kill you just because you're a kid.
+-He has no idea what he is doing.
+
+*loading*
+Would you sell your mind as well your body to survive?
+(Y/N)

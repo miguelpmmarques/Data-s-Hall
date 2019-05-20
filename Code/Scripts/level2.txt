@@ -1,0 +1,48 @@
+
+------------------------------------------
+scene:
+Algorythms department entrance:
+
+Spider - The key must be in here somewhere.
+Player - I love a good treasure hunt.
+
+------------------------------------------
+scene:
+Meeting room
+
+Player- Well, that's inconspicuous.
+Spider- They're not really trying to hide it.
+Player- That's the most advanced A.I. I've ever seen.
+-I wonder what dataset they use to train it.
+------------------------------------------
+scene:  
+Work office
+
+Player - Damn it, of course they are!
+- This database...
+- It's connected to every Data's Hall User!
+
+Spider - Getting brighter I see.
+------------------------------------------
+scene:
+Private Office
+
+Spider - Do you have it?
+Player - Yeah I got the key...
+- Whatever is going on in here...
+- Seems to be on the top floor.
+- Something about a project 2501.
+
+------------------------------------------
+leaving:
+Spider - I think I'm picking up steps...
+-They know something's up!
+
+Player- We're trapped here...
+
+Spider - Not so fast.
+-Upload me that key. I might be able to do something about this...
+*Player Hacks for a sec*
+-It won't be pretty though.
+*starts slowly walking off*
+------------------------------------------

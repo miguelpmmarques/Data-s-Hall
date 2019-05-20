@@ -1,0 +1,68 @@
+html{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: pixel;
+    src: url(moab.ttf) format("truetype");
+}
+h1 {
+    text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
+    margin: 0px;
+    position: absolute;
+    text-align: center;
+    top: 200px;
+    left: 60px;
+    font-family: pixel;
+    font-size: 50px;
+    color: white;
+}
+
+body{
+    width: 1200px;
+    display: inline-flex;
+    margin: 0;
+    padding-top: 2px;
+    width: auto;
+    height: auto;
+    background-image: url("../resources/City_Skyline.png");
+    background-size: 200% auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+.QuestionsBtn{
+    position: absolute;
+    font-size: 50px;
+    color: #FFF;
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: rgba(51,68,85,0.6);
+    cursor: pointer;
+    display: inline-block;
+    margin: 30px;
+    top: 300px;
+    transition: background-color 0.5s;
+}
+
+#Yes{
+    left: 320px;
+    background-image: url("../resources/yes.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+#No{
+    left: 620px;
+    background-image: url("../resources/no.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+#Yes:hover{
+    background-color: rgba(51,68,85,0.9);
+}
+#No:hover{
+    background-color: rgba(51,68,85,0.9);
+}

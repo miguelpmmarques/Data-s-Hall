@@ -1,0 +1,32 @@
+spider:
+-aware 
+- whitty
+-sarcastic
+-smart
+-secretly evil
+
+player:
+-naive
+-rash
+-shortsighted
+
+scene:
+-Hacking DataBase
+
+player - This database...
+- I've never seen anything like this.
+
+Spider- You just hacked the largest memory database in existence.
+Player -Memories?!
+Spider - Remember joe? His memories are there too.
+
+Player - Damn...
+- I noticed something...
+- There might be a number capable of breaking this encription.
+
+Spider -Impressive.
+- Let's go get our magic key.
+- It should be on the 24th floor.
+Player - Let's go then.
+
+(Y/N)

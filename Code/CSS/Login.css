@@ -1,0 +1,152 @@
+html{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: pixel;
+    src: url(moab.ttf) format("truetype");
+}
+h1 {
+    text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
+    margin: 0px;
+    position: absolute;
+    left: 340px;
+    font-family: pixel;
+    font-size: 40px;
+    color: white;
+}
+form{
+    position: absolute;
+    left: 65px;
+    top: 360px;
+}
+#userInput{
+    background-color: Transparent;
+    width: 645px;
+    height: 62px;
+}
+input[type="text"]
+{
+    font-style: italic;
+    font-size: 50px;
+    font-family: pixel;
+    color: white;
+}
+body{
+    width: 1200px;
+    display: inline-flex;
+    margin: 0;
+    padding-top: 2px;
+    width: auto;
+    height: auto;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("../resources/LoginMenu.png"), radial-gradient(circle at 10% 10%, #cbdbfc, #b3bfea, #a0a3d7, #9087c3, #846aac, #775a9a, #694a88, #5c3b76, #4a3566, #3b2e56, #2d2745, #222034);
+    background-size: auto;
+    background-position: center center;
+}
+
+#StartGameBtn{
+    border: none;
+    position: relative;
+    color: #FFF;
+    width: 300px;
+    height: 130px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: Transparent;
+    transition: background-image 1s;
+
+    background-image: url("../resources/StartBtn.png");
+    border: 0;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 250px;
+    bottom: 50px;
+}
+#StartGameBtn:hover
+{
+    background-image: url("../resources/StartBtn2.png");
+}
+
+#ExitBtn{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: Transparent;
+    background-image: url("../resources/exitBtn.png");
+    width: 90px;
+    height: 90px;
+    background-size: 90px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background-color 1s;
+}
+#ExitBtn:hover
+{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#popupStartButton {
+    display: none;
+    position: fixed;
+    padding-top: 150px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+#popup_contentStartButton {
+
+    background-image: url("../resources/City_Skyline.png");
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding-top:  80px;
+    padding-left:  60px;
+    border: 2px solid #FFF;
+    width: 700px;
+    height: 290px;
+    cursor: initial;
+}
+.QuestionsBtn{
+    position: absolute;
+    font-size: 50px;
+    color: #FFF;
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: rgba(51,68,85,0.6);
+    cursor: pointer;
+    display: inline-block;
+    margin: 30px;
+    top: 300px;
+    transition: background-color 0.5s;
+}
+#Yes{
+    background-image: url("../resources/yes.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+#No{
+    right: 320px;
+    background-image: url("../resources/no.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+#Yes:hover{
+    background-color: rgba(51,68,85,0.9);
+}
+#No:hover{
+    background-color: rgba(51,68,85,0.9);
+}

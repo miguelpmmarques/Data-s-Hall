@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../CSS/Login.css">
+	<script type="text/javascript" src="../JS/Login.js"></script>
+	<script type="text/javascript" src="../JS/Slots.js"></script>
+</head>
+	<body>
+		<form >
+			<input id="userInput" type="text" name="firstname" placeholder="USERNAME" required minlength="1" maxlength="18" onkeypress="return event.keyCode != 13;">
+		</form>
+		<button id="StartGameBtn"></button>
+		<button id="ExitBtn"></button>
+		<div id="popupStartButton">
+			<div id="popup_contentStartButton">
+				<h1>Do you want to save this user?</h1>
+				<button  id="Yes" class="QuestionsBtn"></button>
+                <button id= 'No' class="QuestionsBtn"></button>
+			</div>
+		</div>
+	</body>
+</html>

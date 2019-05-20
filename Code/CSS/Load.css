@@ -1,0 +1,322 @@
+html{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: pixel;
+    src: url(moab.ttf) format("truetype");
+}
+h1 {
+    text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
+    margin: 0px;
+    position: absolute;
+    left: 340px;
+    font-family: pixel;
+    font-size: 25px;
+    color: white;
+}
+
+
+#slot1 {
+    position: absolute;
+    top: 240px;
+    left: 70px;
+    border: none;
+    color: #FFF;
+    width: 800px;
+    height: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
+    margin: 0px;
+    font-family: pixel;
+    font-size: 40px;
+    color: white;
+    transition: background-color 0.5s;
+}
+#slot1:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#slot1:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#slot1:hover:active{
+    background-color: rgba(0, 0, 0, 1);
+}
+#slot2 {
+    position: absolute;
+    top: 370px;
+    left: 70px;
+    border: none;
+    color: #FFF;
+    width: 800px;
+    height: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
+    margin: 0px;
+    font-family: pixel;
+    font-size: 40px;
+    color: white;
+    transition: background-color 0.5s;
+}
+#slot2:hover{
+background-color: rgba(0, 0, 0, 0.7);
+}
+#slot2:hover:active{
+    background-color: rgba(0, 0, 0, 1);
+}
+#slot3 {
+    position: absolute;
+    top: 500px;
+    left: 70px;
+    border: none;
+    color: #FFF;
+    width: 800px;
+    height: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
+    margin: 0px;
+    font-family: pixel;
+    font-size: 40px;
+    color: white;
+    transition: background-color 0.5s;
+}
+#slot3:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#slot3:hover:active{
+    background-color: rgba(0, 0, 0, 1);
+}
+
+form{
+    position: absolute;
+    left: 65px;
+    top: 360px;
+}
+#userInput{
+    background-color: Transparent;
+    width: 645px;
+    height: 62px;
+}
+input[type="text"]
+{
+    font-style: italic;
+    font-size: 50px;
+    font-family: pixel;
+    color: white;
+}
+body{
+    width: 1200px;
+    display: inline-flex;
+    margin: 0;
+    padding-top: 2px;
+    width: auto;
+    height: auto;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("../resources/LoadMenu.png"), radial-gradient(circle at 10% 10%, #cbdbfc, #b3bfea, #a0a3d7, #9087c3, #846aac, #775a9a, #694a88, #5c3b76, #4a3566, #3b2e56, #2d2745, #222034);
+    background-size: auto;
+    background-position: center center;
+}
+
+#StartGameBtn{
+    border: none;
+    position: relative;
+    color: #FFF;
+    width: 300px;
+    height: 130px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: Transparent;
+    transition: background-image 1s;
+
+    background-image: url("../resources/StartBtn.png");
+    border: 0;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 250px;
+    bottom: 50px;
+}
+#StartGameBtn:hover
+{
+    background-image: url("../resources/StartBtn2.png");
+}
+
+#ExitBtn{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: Transparent;
+    background-image: url("../resources/exitBtn.png");
+    width: 90px;
+    height: 90px;
+    background-size: 90px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background-color 1s;
+}
+#ExitBtn:hover
+{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#popupStartButton {
+    display: none;
+    position: fixed;
+    padding-top: 150px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+#popup_contentStartButton {
+
+    background-image: url("../resources/City_Skyline.png");
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding-top:  80px;
+    padding-left:  60px;
+    border: 2px solid #FFF;
+    width: 700px;
+    height: 290px;
+    cursor: initial;
+}
+.LevelBtn{
+    border: none;
+    color: #FFF;
+    width: 200px;
+    height: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
+    margin: 0px;
+    font-family: pixel;
+    font-size: 40px;
+    color: white;
+    transition: background-color 0.5s;
+}
+#Level0{
+    position: absolute;
+    top: 160px;
+    left: 280px;
+}
+/*
+background-color: rgba(51,68,85,1);
+background-color: rgba(255,255,66,0.8)
+*/
+#Level0:hover{
+    background-color: rgba(0,0,0,0.7);
+}
+#Level1{
+    position: absolute;
+    top: 250px;
+    left: 280px;
+}
+#Level1:hover{
+    background-color: rgba(0,0,0,0.7);
+}
+#Level2{
+    position: absolute;
+    top: 340px;
+    left: 280px;
+}
+#Level2:hover{
+    background-color: rgba(0,0,0,0.7);
+}
+#Level3{
+    position: absolute;
+    top: 430px;
+    left: 280px;
+}
+#Level3:hover{
+    background-color: rgba(0,0,0,0.7);
+}
+.QuestionsBtn{
+    position: absolute;
+    font-size: 50px;
+    color: #FFF;
+    width: 250px;
+    height: 90px;
+    border-radius: 5px;
+    background-color: rgba(51,68,85,0.6);
+    cursor: pointer;
+    display: inline-block;
+    margin: 30px;
+    top: 380px;
+
+    transition: background-color 0.5s;
+}
+#Continue{
+    background-image: url("../resources/Continue.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    right: 520px;
+}
+#Delete{
+    right: 260px;
+    background-image: url("../resources/Delete.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+#Continue:hover{
+    background-color: rgba(51,68,85,0.9);
+}
+#Delete:hover{
+    background-color: rgba(51,68,85,0.9);
+}
+img {
+    border-radius: 20%;
+    position: absolute;
+    top: 210px;
+    left: 520px;
+    width: 450px;
+    border:2px solid #000;
+}
+#name {
+    top: 155px;
+    left: 500px;
+}
+#startDate {
+    top: 155px;
+    left: 780px;
+}
+#overallTime {
+    top: 185px;
+    left: 500px;
+    font-size: 20px;
+}
+#overallSwitch {
+    top: 185px;
+    left: 780px;
+    font-size: 20px;
+}
+#info {
+    top: 280px;
+    left: 530px;
+}
+#levelName {
+    text-align: center;
+    top: 360px;
+    left: 550px;
+}

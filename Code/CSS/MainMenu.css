@@ -1,0 +1,272 @@
+html{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: pixel;
+    src: url(moab.ttf) format("truetype");
+}
+h1 {
+    text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
+    margin: 0px;
+    position: absolute;
+    left: 500px;
+    font-family: pixel;
+    font-size: 50px;
+    color: white;
+}
+
+
+body{
+    width: 1200px;
+    display: inline-flex;
+    margin: 0;
+    padding-top: 2px;
+    width: auto;
+    height: auto;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: radial-gradient(circle at 85% 70%, #cbdbfc, #b3bfea, #a0a3d7, #9087c3, #846aac, #775a9a, #694a88, #5c3b76, #4a3566, #3b2e56, #2d2745, #222034);
+    background-size: auto;
+    background-position: center center;
+}
+#datasHall{
+    position: absolute;
+    margin: 0px;
+    left: 350px;
+    top:  0px;
+    width: 755px;
+    height: 598px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url("../resources/mainMenuImg1.png");
+
+}
+
+#caracter
+{
+    position: absolute;
+    left: 880px;
+    top:  170px;
+    width: 400px;
+    height: 600px;
+    background-size: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    animation-name: animation;
+    animation-duration: 0.9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes
+animation
+{
+
+  0%
+  {
+    background-image: url("../resources/MainMenuAnimation/hacking1.png");
+  }
+  10%
+  {
+    background-image: url("../resources/MainMenuAnimation/hacking2.png");
+  }
+  20%
+  {
+    background-image: url("../resources/MainMenuAnimation/hacking3.png");
+  }
+  30%
+  {
+    background-image: url("../resources/MainMenuAnimation/hacking4.png");
+  }
+  40%
+  {
+    background-image: url("../resources/MainMenuAnimation/hacking5.png");
+  }
+  60%
+  {
+    background-image: url("../resources/MainMenuAnimation/hacking6.png");
+  }
+  70%
+  {
+    background-image: url("../resources/MainMenuAnimation/hacking7.png");
+  }
+  80%
+  {
+    background-image: url("../resources/MainMenuAnimation/hacking8.png");
+  }
+  90%
+  {
+    background-image: url("../resources/MainMenuAnimation/hacking9.png");
+  }
+  100%
+  {
+    background-image: url("../resources/MainMenuAnimation/hacking1.png");
+  }
+}
+
+nav button{
+    border: none;
+    position: relative;
+    color: #FFF;
+    width: 300px;
+    height: 130px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: Transparent;
+    left: 0px;
+
+    width: 50%;
+    transition: background-image 1s;
+}
+nav{
+    padding-top:  2px;
+    left: 0px;
+    display: inline-block;
+    width: 700px;
+    height: 100%;
+}
+#ExitBtn{
+    position: absolute;
+    left: 1200px;
+    top: 10px;
+    background-color: Transparent;
+    background-image: url("../resources/exitBtn.png");
+    width: 90px;
+    height: 90px;
+    background-size: 90px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background-color 1s;
+}
+#ExitBtn:hover
+{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+button:hover
+{
+    cursor: pointer;
+}
+#StartGameBtn{
+    background-image: url("../resources/StartBtn.png");
+    border: 0;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 5px;
+}
+#StartGameBtn:hover
+{
+    background-image: url("../resources/StartBtn2.png");
+}
+#RankingBtn{
+    background-image: url("../resources/RankingBtn.png");
+    border: 0;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 5px;
+}
+#RankingBtn:hover
+{
+    background-image: url("../resources/RankingBtn2.png");
+}
+#OptionsBtn{
+    background-image: url("../resources/OptionsBtn.png");
+    border: 0;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 5px;
+}
+#OptionsBtn:hover
+{
+    background-image: url("../resources/OptionsBtn2.png");
+}
+#EasterEggBtn{
+    background-image: url("../resources/EasterEggBtn.png");
+    border: 0;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 5px;
+}
+#EasterEggBtn:hover
+{
+    background-image: url("../resources/EasterEggBtn2.png");
+}
+#HelpBtn{
+    background-image: url("../resources/HelpBtn.png");
+    border: 0;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    top: 5px;
+}
+#HelpBtn:hover
+{
+    background-image: url("../resources/HelpBtn2.png");
+}
+.StartBtn{
+    font-size: 50px;
+    position: relative;
+    color: #FFF;
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: rgba(51,68,85,0.6);
+    cursor: pointer;
+    display: inline-block;
+    margin: 30px;
+    padding-top: 10px;
+    transition: background-color 0.5s;
+}
+#LoginBtn{
+
+    background-image: url("../resources/newGame.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+#LoadBtn{
+    background-image: url("../resources/loadGame.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+#LoginBtn:hover{
+    background-color: rgba(51,68,85,0.9);
+}
+#LoadBtn:hover{
+    background-color: rgba(51,68,85,0.9);
+}
+#popupStartButton {
+    display: none;
+    position: fixed;
+    padding-top: 150px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+#popup_contentStartButton {
+
+    background-image: url("../resources/City_Skyline.png");
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding-top:  80px;
+    padding-left:  60px;
+    border: 2px solid #FFF;
+    width: 700px;
+    height: 290px;
+    cursor: initial;
+}

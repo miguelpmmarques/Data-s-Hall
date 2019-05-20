@@ -1,0 +1,190 @@
+html{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+body{
+    width: 1200px;
+    display: inline-flex;
+    margin: 0;
+    padding-top: 2px;
+    width: auto;
+    height: auto;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("../resources/OptionsMenu.png"), radial-gradient(circle at 10% 10%, #cbdbfc, #b3bfea, #a0a3d7, #9087c3, #846aac, #775a9a, #694a88, #5c3b76, #4a3566, #3b2e56, #2d2745, #222034);
+    background-size: auto;
+    background-position: center center;
+}
+.soundEfectsUp{
+    position: absolute;
+    left: 685px;
+    top: 205px;
+    background-color: Transparent;
+    background-image: url("../resources/Sound/SoundUp.png");
+    width: 90px;
+    height: 70px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.menuMusicUp{
+    position: absolute;
+    left: 685px;
+    top: 350px;
+    background-color: Transparent;
+    background-image: url("../resources/Sound/SoundUp.png");
+    width: 90px;
+    height: 70px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.gameMusicUp{
+    position: absolute;
+    left: 685px;
+    top: 495px;
+    background-color: Transparent;
+    background-image: url("../resources/Sound/SoundUp.png");
+    width: 90px;
+    height: 70px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.soundUp{
+    transition: background-image 0.5s;
+}
+.soundUp:hover{
+    cursor: pointer;
+    background-image: url("../resources/Sound/SoundUpHover.png");
+}
+.soundUp:active:hover{
+    transition: background-image 0s;
+    background-image: url("../resources/Sound/SoundUpPressed.png");
+}
+.soundEfectsDown{
+    position: absolute;
+    left: 355px;
+    top: 205px;
+    background-color: Transparent;
+    background-image: url("../resources/Sound/SoundDown.png");
+    width: 90px;
+    height: 70px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.menuMusicDown{
+    position: absolute;
+    left: 355px;
+    top: 350px;
+    background-color: Transparent;
+    background-image: url("../resources/Sound/SoundDown.png");
+    width: 90px;
+    height: 70px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.gameMusicDown{
+    position: absolute;
+    left: 355px;
+    top: 495px;
+    background-color: Transparent;
+    background-image: url("../resources/Sound/SoundDown.png");
+    width: 90px;
+    height: 70px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.soundDown{
+    transition: background-image 0.5s;
+}
+.soundDown:hover{
+    cursor: pointer;
+    background-image: url("../resources/Sound/SoundDownHover.png");
+}
+.soundDown:active:hover{
+    transition: background-image 0s;
+    background-image: url("../resources/Sound/SoundDownPressed.png");
+}
+.soundEfectsControl{
+    position: absolute;
+    left: 805px;
+    top: 205px;
+    background-color: Transparent;
+    background-image: url("../resources/Sound/SoundOn.png");
+    width: 90px;
+    height: 70px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.menuMusicControl{
+    position: absolute;
+    left: 805px;
+    top: 350px;
+    background-color: Transparent;
+    background-image: url("../resources/Sound/SoundOn.png");
+    width: 90px;
+    height: 70px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.gameMusicControl{
+    position: absolute;
+    left: 805px;
+    top: 495px;
+    background-color: Transparent;
+    background-image: url("../resources/Sound/SoundOn.png");
+    width: 90px;
+    height: 70px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.soundControl:hover{
+    cursor: pointer;
+}
+
+#sliderSoundEfects{
+    position: absolute;
+    left: 435px;
+    top: 195px;
+    width: 180px;
+    height: 50px;
+}
+#sliderGameMusic{
+    position: absolute;
+    left: 435px;
+    top: 485px;
+    width: 180px;
+    height: 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#sliderMenuMusic{
+    position: absolute;
+    left: 435px;
+    top: 340px;
+    width: 180px;
+    height: 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#ExitBtn{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: Transparent;
+    background-image: url("../resources/exitBtn.png");
+    width: 90px;
+    height: 90px;
+    background-size: 90px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background-color 1s;
+}
+#ExitBtn:hover
+{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
