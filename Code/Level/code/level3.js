@@ -127,7 +127,7 @@ function create(){
         GameElements.push(player)
         GameElements.push(finalHackPoint)
         GameElements.push(spawn)
-        
+
 
 
         player.onwSpider = true;
@@ -140,7 +140,7 @@ function create(){
             new ScriptAction(spider, "Everyone.", [0,10],1200,null,2),
             new ScriptAction(player, "...", [20,-40],null,null,2)
         ])
-    
+
         end1 = new Talk(null, [
             new ScriptAction(player, "*offAll",null,null,null,0.1),
             new ScriptAction(spider, "What are you doing?!", [0,10],null,null,2),
@@ -158,13 +158,13 @@ function create(){
             new ScriptAction(player, "I'm just a thief.", [20,-40],1500,null,2),
             new ScriptAction(player, "Thanks but \nno thanks!", [20,-40],1800,null,2),
         ])
-        
+
         end2 = new Talk(null, [
             new ScriptAction(player, "*offAll",null,null,null,0.1),
 
             new ScriptAction(spider, "I knew you had it in you.", [0,10],null,null,2),
             new ScriptAction(spider, "*transform", null,null,null,2),
-            
+
             new ScriptAction(player, "*die", null,null,null,1),
             new ScriptAction(player, "*invisible", null,null,null,2),
             new ScriptAction(spider, "Good job.", [0,10],1400,null,2),
@@ -193,14 +193,6 @@ function create(){
 
             intro.active = true
         }
-
-
-
-
-
-
-
-
         scenes = [intro,end1,end2,end3]
         priorityObj = []
         soundGame       = new OptionsBtn(100,20,"soundGame")
@@ -537,7 +529,7 @@ function update(){
                 //faz a tua cutscene sea bruh
                 end3.active = true;
                 game.time.events.add(Phaser.Timer.SECOND * 20.1,ai.end3End,ai);
-    
+
               }
               else if(decisionSwitch.finalDecision==false && answer2==false && answer1==true){
                 ai.birthAnim.play();
@@ -546,7 +538,7 @@ function update(){
                 ai.deathAnim.play();
 
               }
-              
+
             }
             if(spider!=null){
                 var hitPlatform2 = game.physics.arcade.collide(spider.sprite,platforms.platforms);
@@ -554,7 +546,7 @@ function update(){
             }
           }
           catch(e){
-    
+
           }
 
         var hitPlatform = game.physics.arcade.collide(player.sprite,platforms.platforms);

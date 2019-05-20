@@ -109,7 +109,7 @@ class ScriptAction{
         }
 
         if(this.newCamLocation != null){
-            
+
         }
     }
 }
@@ -191,7 +191,7 @@ class Talk{
             }else{
                 if(this.x != null){
                     if(player.sprite.centerX > this.x && player.sprite.centerX < this.x + this.lenght && player.sprite.centerY > this.y && player.sprite.centerY < this.y + this.height){
-       
+
                         this.active = true
                     }
                 }
@@ -319,6 +319,7 @@ class OptionsBtn extends Button {
             this.soundOn=true;
             soundtrack.resume()
             soundtrackH.resume()
+            var localDataBase = JSON.parse(localStorage.getItem('items'));
             updateSoundEffectsVolume(localDataBase.soundEfectsVol,loaded)
         }
    }
@@ -402,6 +403,7 @@ class GoToPart2 extends GameObject{
     update(){
         let check_intersection_P = player.sprite.overlap(this.sprite);
         if (check_intersection_P) {
+            var localDataBase = JSON.parse(localStorage.getItem('items'));
             localDataBase.actUser.level2Part1Time = Math.round(game.time.totalElapsedSeconds() * 100) / 100;
             localStorage.setItem('items',JSON.stringify(localDataBase));
 
@@ -424,7 +426,10 @@ class GameWin extends GameObject{
         if (check_intersection_P && player.gameWin) {
             if (player.hasSpider) {
                 // Ainda poderar se meto aqui um menuzinho
-                localDataBase.actUser.level = 1;
+                var localDataBase = JSON.parse(localStorage.getItem('items'));
+                if (localDataBase.actUser.level == 0) {
+                    localDataBase.actUser.level = 1;
+                }
                 if (localDataBase.actUser.index == 1) {
                     localDataBase.slotLoad1 = localDataBase.actUser;
                 }
@@ -489,7 +494,7 @@ class HackableTalk extends GameObject{
             if(this.sprite.overlap(player.sprite) && controls.interact.isDown && !this.avoidSpam && !controls.spacebar.isDown){
                 this.talk.active = true
                 this.winCond.entry = true
-                
+
                 this.avoidSpam = true
                 game.time.events.add(Phaser.Timer.SECOND * 0.5, enableAgain, this);
             }
@@ -525,7 +530,7 @@ class Zones2Win extends GameObject{
     }
     unlock(newState){
         this.sprite.alpha = 0;
-        
+
     }
 }
 
@@ -589,6 +594,7 @@ class GoToPart3 extends GameObject{
             let mainSource=window.parent
             game.time.events.add(Phaser.Timer.SECOND *17, end, this);
             function end(){
+                var localDataBase = JSON.parse(localStorage.getItem('items'));
                 localDataBase.actUser.level2Switch =switchFlips;
                 localDataBase.actUser.level2Time = Math.round(game.time.totalElapsedSeconds() * 100) / 100 + localDataBase.actUser.level2Part1Time;
                 localDataBase.actUser.totaltime = localDataBase.actUser.level0Time +localDataBase.actUser.level1Time +localDataBase.actUser.level2Time +localDataBase.actUser.level3Time;
@@ -617,11 +623,10 @@ class Project2051{
         this.decision=null;
         this.birthAnim.onComplete.add(this.birthEnd,this);
         this.deathAnim.onComplete.add(this.deathEnd,this);
-
-
     }
     idleEnd(){
         this.transformAnim.play();
+
     }
     birthEnd(){
 
@@ -666,7 +671,7 @@ class Project2051{
           this.decision=decisionSwitch;
         }
         catch(e){
-      
+
         }
 
       }
@@ -684,6 +689,7 @@ class EasterEgg extends GameObject{
 
     update(){
         if (spider) {
+            var localDataBase = JSON.parse(localStorage.getItem('items'));
             let check_intersection_P = player.sprite.overlap(this.sprite);
             let check_intersection_S = spider.sprite.overlap(this.sprite);
             if (check_intersection_P || check_intersection_S) {
@@ -691,6 +697,7 @@ class EasterEgg extends GameObject{
 
                 switch (this.level){
                   case 0:   localDataBase.actUser.EasterEgg0 = true;
+
                     break;
                   case 1:   localDataBase.actUser.EasterEgg1 = true;
                     break;
@@ -700,6 +707,7 @@ class EasterEgg extends GameObject{
                     break;
                 }
             }
+            localStorage.setItem('items',JSON.stringify(localDataBase));
         }
     }
 }
@@ -798,7 +806,7 @@ class Player extends GameObject{
         //this.sprite.frame = 91;
 
         function spawnSpider1(){
-          
+
             if(spider == null){//spawn spider for the first time
                 if(this.lookingDirection==1){
                     spider = new Spider(this.sprite.body.x - 20, this.sprite.body.y + 40, false);
@@ -906,7 +914,7 @@ class Player extends GameObject{
     }
 
     update(){
- 
+
         if (this.dead) {
 
             this.die()
@@ -1123,6 +1131,9 @@ class Spider extends GameObject{
         this.sprite.body.velocity.x = 0;
         player.activate()
         this.sprite.animations.play('deactivate');
+
+        this.startUp = false
+        this.landing =false
 
         function enableAgain(){
             this.avoidSpam = false;
@@ -1462,7 +1473,7 @@ class ElevatorWin extends GameObject{
             player.sprite.alpha = 0;
             this.active = false;
             this.sprite.animations.play('enter');
-         
+
             if(this.sprite.inCamera){
 
               elevatorSound.play();
@@ -1471,6 +1482,7 @@ class ElevatorWin extends GameObject{
 
         function winGame(){
             var mainSource=window.parent;
+            var localDataBase = JSON.parse(localStorage.getItem('items'));
             if (localDataBase.actUser.index == 1) {
                 localDataBase.slotLoad1 = localDataBase.actUser;
             }
@@ -1486,13 +1498,12 @@ class ElevatorWin extends GameObject{
                 localDataBase.actUser.level1Time = Math.round(game.time.totalElapsedSeconds() * 100) / 100;
                 localDataBase.actUser.totaltime = localDataBase.actUser.level0Time +localDataBase.actUser.level1Time +localDataBase.actUser.level2Time +localDataBase.actUser.level3Time;
                 localDataBase.actUser.totalSwitch = localDataBase.actUser.level0Switch+localDataBase.actUser.level1Switch+localDataBase.actUser.level2Switch+localDataBase.actUser.level3Switch;
-                localStorage.setItem('items',JSON.stringify(localDataBase));
             }
             if (this.level == 2) {
                 localDataBase.actUser.level = 3;
-                localStorage.setItem('items',JSON.stringify(localDataBase));
             }
 
+            localStorage.setItem('items',JSON.stringify(localDataBase));
             mainSource.postMessage(this.location, '*');
         }
         function restore(){
@@ -2146,7 +2157,7 @@ class HackPoint extends GameObject{
             this.avoidSpam = true;
         }
         if(player.state || (spider != null && spider.state)){
-            
+
             this.promptIntersection();
         }
 
@@ -2269,7 +2280,7 @@ class Switch extends HackObject{
             this.sprite.frame = 0;
             if(this.output != null){
                 for(let i = 0; i< this.output.length ; i++){
-  
+
                     this.output[i].changeState(false);
                 }
             }
