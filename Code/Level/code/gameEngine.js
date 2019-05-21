@@ -2879,7 +2879,7 @@ class Enemy extends GameObject{
           }
           if((this.spriteEnergy.overlap(player.sprite) || this.check )&& this.spriteEnergy.visible==true || this.limit=='Door'){ ///OLEOLE
             if(this.limit=='Door'){
-              if((game.physics.arcade.collide(this.spriteEnergy,this.limitLeft.sprite) && this.limitLeft.opened==false) || (game.physics.arcade.collide(this.spriteEnergy,this.limitRight.sprite) && this.limitRight.opened==false)){
+              if((game.physics.arcade.collide(this.spriteEnergy,this.limitLeft.sprite) && this.limitLeft.opened==false) || (game.physics.arcade.collide(this.spriteEnergy,this.limitRight.sprite) && this.limitRight.opened==false)|| this.check){
                 if(this.looking=='Right'){
                   this.spriteEnergy.body.velocity.x=0;
                   this.spriteEnergy.animations.play('dieRight')
@@ -2891,7 +2891,7 @@ class Enemy extends GameObject{
                 }
               }
             }
-            if(game.physics.arcade.collide(this.spriteEnergy,player.sprite)){//this.spriteEnergy.overlap(player.sprite)){
+            if(game.physics.arcade.collide(this.spriteEnergy,player.sprite)&& this.spriteEnergy.visible==true){//this.spriteEnergy.overlap(player.sprite)){
               player.dead = true;
             }
 
@@ -3220,6 +3220,7 @@ class Enemy extends GameObject{
       dieFinished(){
         energyShot.stop();
         this.spriteEnergy.visible=false;
+      //  this.spriteEnergy.x=this.sprite.x;
         game.time.events.add(Phaser.Timer.SECOND * 2,this.verifyState,this);
       }
     }
