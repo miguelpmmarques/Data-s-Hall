@@ -15,6 +15,16 @@ h1 {
     font-size: 50px;
     color: white;
 }
+h2 {
+    text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
+    margin: 0px;
+    position: absolute;
+    left: 500px;
+    font-family: pixel;
+    font-size: 35px;
+    color: white;
+}
+
 
 
 body{
@@ -106,7 +116,30 @@ animation
     background-image: url("../resources/MainMenuAnimation/hacking1.png");
   }
 }
+#Mega{
+    right: 270px;
 
+}
+img{
+    position: absolute;
+    top:270px;
+    max-width: 305px;
+
+}
+#special{
+    position: absolute;
+    top: 210px;
+    left: 440px;
+}
+#thanks{
+    position: absolute;
+    top: 110px;
+}
+#us{
+    position: absolute;
+    top: 160px;
+    left: 240px;
+}
 nav button{
     border: none;
     position: relative;
@@ -268,5 +301,31 @@ button:hover
     border: 2px solid #FFF;
     width: 700px;
     height: 290px;
+    cursor: initial;
+}
+#popupThanks {
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+#popupThanks_contentStartButton {
+
+    background-image: url("../resources/City_Skyline.png");
+    background-size: 150%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding-top:  80px;
+    padding-left:  60px;
+    border: 2px solid #FFF;
+    width: 800px;
+    height: 420px;
     cursor: initial;
 }

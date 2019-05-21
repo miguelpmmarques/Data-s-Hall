@@ -16,14 +16,19 @@ function main(){
 	var btnHelp = document.getElementById("HelpBtn");
 	var loginBtn = document.getElementById("LoginBtn");
 	var loadBtn = document.getElementById("LoadBtn");
+	var btnThanks = document.getElementById("ExitBtn");
+	var thanksPopup = document.getElementById("popupThanks");
 	var user = document.getElementById("user");
 
 	var startImg = new Image();
 	startImg.addEventListener("load", function imgLoaded(ev){
 		startImg.src = "../resources/City_Skyline.png";
 	});
+
 	var aux = document.getElementById("popup_contentStartButton").style.backgroundImage;
+	var aux2 = document.getElementById("popupThanks_contentStartButton").style.backgroundImage;
 	aux = startImg;
+	aux2 = startImg;
 
 
 	var localDataBase = JSON.parse(localStorage.getItem('items'));
@@ -31,6 +36,10 @@ function main(){
 		user.innerHTML = "User >>> "+localDataBase.userName;
 	}
 
+	btnThanks.onclick = function() {
+		console.log("bateu");
+        thanksPopup.style.display = "block";
+    }
     btnStart.onclick = function() {
         popup.style.display = "block";
     }
@@ -63,9 +72,15 @@ function main(){
 	loadBtn.onclick = function() {
         mainSource.postMessage('Load.html', '*');
     }
+	thanksPopup.onclick = function() {
+        thanksPopup.style.display = "block";
+    }
     window.onclick = function(ev) {
         if (ev.target == popup) {
             popup.style.display = "none";
+        }
+		if (ev.target == thanksPopup) {
+            thanksPopup.style.display = "none";
         }
     }
 }
