@@ -1030,9 +1030,9 @@ class Spider extends GameObject{
         this.sprite.animations.add('idle', [1,1,0,0,0,1,1,1,1,1,1,0,0,0,1,1,     10,11,11,11,10 ],5,true);
         this.sprite.animations.add('left', [8,0,9], 10,true);
         this.sprite.animations.add('right',[9,0,8], 10,true);
-        let vJumpStarup = this.sprite.animations.add('verticalJumpStartup',[1, 24, 25, 26, 27, 28],15,false);
-        let hJumpStarupR = this.sprite.animations.add('horizontalJumpStartupR',[1,10,14,14,14],15,false);
-        let hJumpStarupL =this.sprite.animations.add('horizontalJumpStartupL',[1,35,34,34,34],15,false);
+        let vJumpStarup = this.sprite.animations.add('verticalJumpStartup',[1, 24, 25, 26, 27, 28],30,false);
+        let hJumpStarupR = this.sprite.animations.add('horizontalJumpStartupR',[1,10,14,14,14],30,false);
+        let hJumpStarupL =this.sprite.animations.add('horizontalJumpStartupL',[1,35,34,34,34],30,false);
         let landingH = this.sprite.animations.add('verticalLanding',[29,26,23, 1],10,false);
         let landingR = this.sprite.animations.add('horizontalLandingR',[30,37,36,1],10,false);
         let landingL = this.sprite.animations.add('horizontalLandingL',[10,11,12,1],10,false);
