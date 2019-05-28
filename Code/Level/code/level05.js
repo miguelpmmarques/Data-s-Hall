@@ -119,7 +119,7 @@ function create(){
 
             new ScriptAction(spider,"Innocent much?",[10,0],1400,null,2),
             new ScriptAction(spider,"Watch this!",[10,0],1600,null,2),
-            new ScriptAction(spider,"Hey Joe! How was work today?",[10,0],1800,null,3),
+            new ScriptAction(spider,"Hey Joe! How was work today?",[10,0],1650,null,3),
 //olo
             new ScriptAction(spider,"Hum...",[100,-150],null,null,1),
             new ScriptAction(spider,"...",[100,-150],null,null,2),
@@ -129,7 +129,7 @@ function create(){
 
             new ScriptAction(spider,"Must happen a lot.",[10,0],null,null,3),
             new ScriptAction(spider,"I'd guess.",[10,0],2000,null,3),
-            new ScriptAction(spider,null,null,null,null,3),
+            new ScriptAction(spider,null,null,null,null,6),
 
             new ScriptAction(spider,"What happens to them all...",[10,0],2500,null,3),
             new ScriptAction(spider,"See that guy?",[10,0],null,null,3),
@@ -156,8 +156,8 @@ function create(){
             new ScriptAction(player,null,null,1550,null,20),
             new ScriptAction(player,null,null,2000,null,3),
 
-            new ScriptAction(player,"What just happened?",[15,-45],null,null,3),
             new ScriptAction(player,"*lookUp",null,null,[1600,null,null,null],3),
+            new ScriptAction(player,"What just happened?",[15,-45],null,null,3),
             new ScriptAction(player,null,null,2500,null,13)
         ])
 

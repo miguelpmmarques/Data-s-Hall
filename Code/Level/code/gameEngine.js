@@ -80,7 +80,7 @@ class ScriptAction{
                         player.sprite.centerY = this.yOffset
                         break
                     case "*lookUp":
-                        player.sprite.frame = 21
+                        player.sprite.frame = 20
                         break
                     case "*die":
                         player.sprite.animations.play("dieLeftsafe")
