@@ -82,6 +82,9 @@ class ScriptAction{
                     case "*lookUp":
                         player.sprite.frame = 20
                         break
+                    case "*lookUpL":
+                        player.sprite.frame = 21
+                        break
                     case "*die":
                         player.sprite.animations.play("dieLeftsafe")
                         break

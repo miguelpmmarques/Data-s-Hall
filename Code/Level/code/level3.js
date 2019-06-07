@@ -135,7 +135,7 @@ function create(){
         spider.sprite.animations.play("spawn")
         intro = new Talk(null, [
             new ScriptAction(player, null,null,1500,null,1),
-            new ScriptAction(player,"*lookUp", null,null,null,2),
+            new ScriptAction(player,"*lookUpL", null,null,null,2),
             new ScriptAction(player, "Whats that weird \ngreen stuff?", [20,-30],null,null,2),
             new ScriptAction(spider, "Everyone.", [0,10],1200,null,2),
             new ScriptAction(player, "...", [20,-40],null,null,2)
